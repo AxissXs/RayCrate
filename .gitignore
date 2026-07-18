@@ -1,0 +1,55 @@
+# Rust / Cargo
+# https://github.com/rust-lang/cargo/blob/master/CHANGELOG.md
+
+target/
+**/*.rs.bk
+Cargo.lock
+
+# These are backup files brought in by installing a Rust toolchain
+# via Rustup, and potentially other components.
+# Remove this if you are not using Rustup.
+.rustup/
+.toolchains/
+
+# These are directories that Rustup uses to store toolchains.
+# Useful if you want to have multiple toolchains locally.
+# This can be useful for CI, but you might want to remove this if you're
+# only using a single toolchain.
+**/*.pdb
+
+# Ignore workspace info
+**/*.workspace
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local env files
+.env
+.env.local
+
+# Coverage reports
+*.lcov
+coverage/
+tarpaulin-report.html
+
+# Build artifacts
+*.so
+*.dylib
+*.dll
+*.rlib
+
+# Output binaries
+*.exe
+*.out
+*.app
+
+# Test artifacts
+*.log

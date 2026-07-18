@@ -1,0 +1,5 @@
+# RayCrate Cursor & Copilot Instructions
+
+- Project: RayCrate (Cross-platform modern proxy client in Rust using Xray-core, TUN mode, OpenVPN, OpenConnect).
+- Language: Rust (2021 edition), Tokio async runtime, Tauri v2.
+- Rules: Follow `AGENTS.md`. Never use `.unwrap()` in production library code. Use `thiserror` for errors and `tracing` for logging. Ensure cross-platform support (Linux, macOS, Windows).
