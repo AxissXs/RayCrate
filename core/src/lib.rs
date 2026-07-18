@@ -20,6 +20,8 @@ pub enum RayCrateError {
     HttpError(#[from] reqwest::Error),
     #[error("URL parse error: {0}")]
     UrlError(#[from] url::ParseError),
+    #[error("Serialization error: {0}")]
+    SerdeError(#[from] serde_json::Error),
 }
 
 pub type Result<T> = std::result::Result<T, RayCrateError>;

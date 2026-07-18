@@ -24,7 +24,7 @@ impl TunManager {
         
         // Configuration for tun2 virtual device
         let mut config = tun2::Configuration::default();
-        config.name(&self.interface_name);
+        config.tun_name(&self.interface_name);
         config.address("10.0.0.2");
         config.netmask("255.255.255.0");
         config.up();

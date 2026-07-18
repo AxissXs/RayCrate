@@ -2,7 +2,7 @@ use crate::{config::ProxyProfile, RayCrateError, Result};
 use std::process::{Child, Command, Stdio};
 use std::sync::Arc;
 use tokio::sync::Mutex;
-use tracing::{info, error};
+use tracing::info;
 
 pub struct XrayManager {
     process: Arc<Mutex<Option<Child>>>,

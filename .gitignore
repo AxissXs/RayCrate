@@ -1,6 +1,7 @@
 # Rust / Cargo
 # https://github.com/rust-lang/cargo/blob/master/CHANGELOG.md
 
+dist/
 target/
 **/*.rs.bk
 Cargo.lock

@@ -5,6 +5,15 @@ edition = "2021"
 authors = ["RayCrate Contributors"]
 license = "MIT"
 description = "Core engine for RayCrate cross-platform proxy client"
+default-run = "raycrate"
+
+[[bin]]
+name = "raycrate"
+path = "src/main.rs"
+
+[lib]
+name = "raycrate_core"
+path = "src/lib.rs"
 
 [dependencies]
 tokio = { version = "1.38", features = ["full"] }
@@ -17,6 +26,8 @@ base64 = "0.22"
 uuid = { version = "1.8", features = ["v4"] }
 thiserror = "1.0"
 tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+clap = { version = "4", features = ["derive"] }
 tun2 = "1.0"
 sys-info = "0.9"
 
